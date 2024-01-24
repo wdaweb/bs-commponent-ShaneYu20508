@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 文字樣式 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karantina:wght@300;400;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap引入  -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css'>
+    <!-- bootstrap 的 icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- swiper 的 css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css' />
+
+    <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <!-- 照片彈出插件 -->
+    <!-- 將 github 中的 zip 檔案下載，並且進到 dist 資料夾中，將他的 css 以及 js 複製下來 -->
+    <!-- 引入 magnific-popup 的 css (jq 元件也要) -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <!-- 引入需要的 magnific-popup 的 css (jq 元件也要) -->
+    <link rel="stylesheet" href="./css/magnific-popup-self.css">
+
+</head>
+
+<body>
+    <!-- 首頁 -------------------------------------------------------------------------->
+    <section id="section01">
+        <div class="container">
+            <h1 class="title">Life Delivery</h1>
+            <p class="title">
+                special service for special request
+            </p>
+        </div>
+        <div id="scene">
+            <div class="big-pic" data-depth="-0.6">
+                <img src="./imgs/detective.jfif">
+            </div>
+            <div class="sm-pic01" data-depth="0.25">
+                <img src="./imgs/sm-pic01.jpg">
+            </div>
+            <div class="sm-pic02" data-depth="0.5">
+                <img src="./imgs/sm-pic02.jpg">
+            </div>
+        </div>
+    </section>
+    <!-- 幹員 -------------------------------------------------------------------------->
+    <section id="section02">
+        <div class="container">
+            <h2>Mail Mans</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/deadpool.jpg">
+                                <img src="./imgs/deadpool.jpg" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/john-wick.jpg">
+                                <img src="./imgs/john-wick.jpg" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/Bob-Lee-Swagger.jpg">
+                                <img src="./imgs/Bob-Lee-Swagger.jpg" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/John_Rambo.jpg">
+                                <img src="./imgs/John_Rambo.jpg" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/deadshot.jpg">
+                                <img src="./imgs/deadshot.jpg" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a class="image-popup-no-margins" href="./imgs/Bryan-Mills.jpg">
+                                <img src="./imgs/Bryan-Mills.jpg" class="card-img-top">
+                                <!-- https://zh.wikipedia.org/zh-tw/%E5%8D%B3%E5%88%BB%E6%95%91%E6%8F%B4 -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </section>
+    <!-- 服務 -------------------------------------------------------------------------->
+    <section id="section03">
+        <h2>Service</h2>
+        <div class="container">
+            <div class="service">
+                <img src="./imgs/Valuables_Escort.jpg">
+                <h3>
+                    貴重物品押運
+                </h3>
+                <p>
+                    Valuables Escort
+                </p>
+            </div>
+            <div class="service">
+                <img src="./imgs/Personal_Bodyguard.jpg">
+                <h3>
+                    私人保鑣
+                </h3>
+                <p>
+                    Personal Bodyguard
+                </p>
+            </div>
+            <div class="service">
+                <img src="./imgs/Personal_Security_Protection.jpg">
+                <h3>
+                    人身安全保護
+                </h3>
+                <p>
+                    Personal Security Protection
+                </p>
+            </div>
+            <div class="service">
+                <img src="./imgs/sniper.jpg">
+                <h3>
+                    刺殺任務
+                </h3>
+                <p>
+                    Assassin Mission
+                </p>
+            </div>
+            <div class="service">
+                <img src="./imgs/detective_wall.jpg">
+                <h3>
+                    情資蒐集
+                </h3>
+                <p>
+                    Intelligence Collection
+                </p>
+            </div>
+            <div class="service">
+                <img src="./imgs/Infiltration-mission.jpg">
+                <h3>
+                    滲透破壞
+                </h3>
+                <p>
+                    Infiltration mission
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  #section01 圖片視差  -->
+    <script src="./js/parallax.js"></script>
+
+    <!-- 2.引入 bootstrap.bundle.js 才可以使用元件 -->
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- 引入 swiper 相簿 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js'
+        integrity='sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=='
+        crossorigin='anonymous'></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
+
+    <!-- 設定 gsap 主程式 -->
+    <script src="./GSAP/gsap.js"></script>
+    <!-- 使用 gsap plugin -->
+    <script src="./GSAP/ScrollTrigger.js"></script>
+
+    <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <!-- 引入 magnific-popup 的 jq 元件 (css 也要) -->
+    <script src="./js/jquery.magnific-popup.js"></script>
+    <script src="./js/jquery.magnific-self.js"></script>
+
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

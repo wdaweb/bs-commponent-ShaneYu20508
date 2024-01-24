@@ -1,0 +1,78 @@
+#section02 {
+  padding: 0;
+  margin: 0;
+  height: 75vh;
+  background: #0c122a;
+  color: #f9be19;
+
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 80vh;
+    position: relative;
+
+    h2 {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Fira Sans';
+    }
+
+    .swiper {
+      top: 20%;
+      .swiper-slide {
+        .card {
+          height: 100%;
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include lg {
+    height: 100vh;
+    .container {
+      height: 100vh;
+    }
+    .swiper {
+      width: 100%;
+      height: 500px;
+      top: 20%;
+      .swiper-slide {
+        .card {
+          height: 100%;
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

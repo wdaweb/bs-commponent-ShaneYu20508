@@ -1,0 +1,125 @@
+#section01 {
+  // padding: 0;
+  margin: 0;
+  height: 50vh;
+  background: #0c122a;
+  color: #f9be19;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fira Sans';
+  }
+
+  p {
+    position: absolute;
+    width: 100%;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 35%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  #big-pic {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    z-index: 2;
+  }
+
+  .big-pic img {
+    display: block;
+    width: 60%;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .sm-pic01 {
+    width: 32.5%;
+    height: 50%;
+    position: absolute;
+    z-index: 4;
+  }
+  .sm-pic01 img {
+    width: 70%;
+    position: absolute;
+    left: 15% !important;
+    top: 10% !important;
+    z-index: 4;
+    display: none;
+  }
+  .sm-pic02 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 10% !important;
+    z-index: 4;
+  }
+  .sm-pic02 img {
+    width: 70%;
+    position: absolute;
+    left: 15% !important;
+    top: 50% !important;
+    z-index: 4;
+  }
+
+  @include lg {
+    height: 100vh;
+    display: flex;
+
+    .container {
+      margin: 0;
+      width: 50%;
+      position: relative;
+      height: 100vh;
+      left: 50%;
+      h1 {
+        position: absolute;
+        top: 47.5%;
+        left: 37.5%;
+        transform: translate(-50%, -50%);
+        font-family: 'Fira Sans';
+      }
+      p {
+        position: absolute;
+        width: 100%;
+        top: 52.5%;
+        left: 37.5%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    #scene {
+      width: 60%;
+      height: 100vh;
+      top: 0;
+      display: flex;
+      align-items: center;
+      .big-pic {
+        top: 0%;
+        img {
+          width: 80%;
+        }
+      }
+      .sm-pic01 img {
+        display: block;
+      }
+      .sm-pic02 {
+        top: 35% !important;
+        left: 50% !important;
+      }
+    }
+  }
+}
